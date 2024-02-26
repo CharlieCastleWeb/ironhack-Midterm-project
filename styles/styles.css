@@ -9,11 +9,22 @@
 /* VARIABLES */
 
 :root {
-    
+    --blue--darker: #072ac8;
+    --blue--dark: #43d2ff;
+    --blue--light: #a2d6f9;
+    --blue--lighter: #d1edff;
+    --gray--darker: #292e47;
+    --gray--dark: #6b708d;
+    --gray--light: #f2f4fc;
+    --gray--lighter: #ecf7ff;
+    --yellow-accent: #ffc600;
 }
 
 /* TYPOGRAPHY */
 
+body {
+    font-family: "Roboto", sans-serif;
+}
 
 /* LAYOUT */
 
