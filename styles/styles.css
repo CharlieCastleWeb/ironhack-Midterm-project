@@ -61,6 +61,8 @@ body {
 
 /* LAYOUT */
 
+/* Header section */
+
 .burger {
     position: relative;
     display: block;
@@ -137,6 +139,37 @@ nav a:focus {
     outline: none;
 }
 
-/* Header section */
-
 /* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+    
+    
+    /* Utility Classes */
+    .container {
+        width: 60%;
+        margin: 0 auto;
+    }    
+    
+    /* Header section */
+    .burger {
+        display: none;
+    }
+
+    nav {
+        position: fixed;
+        top: auto;
+        right: auto;
+        height: auto;
+        background: none;
+        padding: 0;
+    }
+
+    nav ul {
+        display: flex;
+        width: 100%;
+    }
+
+    nav a {
+        background: none;
+    }
+}
