@@ -26,6 +26,8 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+
+
 /* LAYOUT */
 
 /* Header section */
@@ -57,6 +59,11 @@ body {
 
 body {
     font-family: "Roboto", sans-serif;
+    color: var(--gray--dark);
+}
+
+nav a.active {
+    color: var(--blue--darker);
 }
 
 /* LAYOUT */
@@ -109,7 +116,7 @@ nav {
     display: block;
     z-index: 1;
     background-color: var(--blue--lighter);
-    padding: 120px;
+    padding: 8em 4em;
     transition: 0.4s;
 }
 
@@ -133,43 +140,74 @@ nav a {
     padding: 12px 16px;
 }
 
+
+
 nav a:hover,
 nav a:focus {
     background-color: var(--blue--dark);
     outline: none;
 }
 
+nav ul li:has(> a.contact-btn) {
+    
+}
+
+nav a.contact-btn {
+    background-color: var(--blue--darker);
+    color: white;
+    padding: 1em 2.2em;
+}
+
+
+
 /* MEDIA QUERIES */
 
 @media (min-width: 768px) {
-    
-    
     /* Utility Classes */
     .container {
-        width: 60%;
+        width: 76%;
         margin: 0 auto;
-    }    
-    
+    }
+
     /* Header section */
     .burger {
         display: none;
     }
 
+    header {
+    }
+
     nav {
+        display: block;
         position: fixed;
         top: auto;
         right: auto;
         height: auto;
         background: none;
         padding: 0;
+        margin-top: 4.5em;
     }
 
     nav ul {
         display: flex;
-        width: 100%;
+        justify-content: space-between;
+        align-items: center;
     }
 
     nav a {
         background: none;
+        margin: 0;
+        padding: 0;
     }
+
+    nav a.logo {
+        margin-right: 14em;
+        text-align: left;
+    }
+
+    nav ul li:has(> a.contact-btn) {
+        margin-left: 12em;
+    }
+
+    
 }
